@@ -1,0 +1,8 @@
+__pycache__/
+*.pkl
+__MACOSX/
+*.ds_store
+.env
+venv/
+.idea/
+.vscode/
