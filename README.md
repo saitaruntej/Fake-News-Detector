@@ -1,65 +1,68 @@
-# 🕵️‍♀️ TrueCheck AI - Fake News Detector
+# 📰 TrueCheck AI – Fake News Detection System
 
-**TrueCheck AI** is a machine learning-powered application designed to detect fake news articles based on their content. It uses a **PassiveAggressiveClassifier** trained on a dataset of real and fake news to classify articles with high accuracy.
+TrueCheck AI is a Machine Learning based web application that helps detect whether a news article is **Real** or **Fake**.  
+The system uses **Natural Language Processing (NLP)** and a trained **PassiveAggressiveClassifier** model to analyze the given news content and provide instant predictions.
 
-The project features a beautiful, user-friendly web interface built with **Streamlit** and a command-line interface for quick predictions.
+This project is designed with a simple and user-friendly interface using **Streamlit**.
 
-## ✨ Features
+---
 
-- **Real-time Fake News Detection**: Instantly analyze news articles and get a verification result (Real vs. Fake).
-- **Interactive Web App**: A modern, responsive UI with a dark-themed design.
-- **Search & Auto-fill**: Select existing headlines from the dataset to test the model.
-- **High Accuracy**: Utilizes TF-IDF vectorization and a PassiveAggressiveClassifier for robust text classification.
-- **Command Line Tools**: Scripts for training the model and running predictions from the terminal.
+## 🌐 Live Demo
 
-## 🚀 Installation
+🔗 https://fake-news-detector-rniugz3wm24xufbmi7kuxj.streamlit.app/
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/saitaruntej/Fake-News-Detector.git
-    cd Fake-News-Detector
-    ```
+---
 
-2.  **Install dependencies:**
-    ```bash
-    pip install -r streamlit.txt
-    ```
+## 🚀 Features
 
-## 🛠️ Usage
+✅ Detect Fake and Real News Instantly  
+✅ Clean and Interactive Web Interface  
+✅ Machine Learning Based Prediction  
+✅ Fast and Accurate Results  
+✅ Easy to Use  
+✅ Deployed Online with Streamlit  
 
-### 1. Run the Web Application (Recommended)
-Launch the interactive web interface:
-```bash
-streamlit run app.py
-```
-Or:
-```bash
-python -m streamlit run app.py
-```
-The app will open in your browser at `http://localhost:8501`.
+---
 
-### 2. Run CLI Prediction
-Test the model directly from your terminal:
-```bash
-python predict.py
-```
+## 🛠️ Tech Stack
 
-### 3. Train the Model (Optional)
-If you want to retrain the model with new data (place your `news.csv` in the root directory):
-```bash
-python train.py
-```
+- Python  
+- Streamlit  
+- Scikit-learn  
+- Pandas  
+- NumPy  
+- Pickle  
+
+---
 
 ## 📂 Project Structure
 
-- `app.py`: Main Streamlit web application.
-- `train.py`: Script to train the machine learning model.
-- `predict.py`: CLI script for testing predictions.
-- `model.pkl`: Pre-trained model file.
-- `vectorizer.pkl`: Pre-trained TF-IDF vectorizer.
-- `news.csv`: Dataset used for training and testing.
-- `streamlit.txt`: List of Python dependencies.
+```bash
+fake-news-detector/
+│── app.py
+│── train.py
+│── model.pkl
+│── vectorizer.pkl
+│── news.csv
+│── requirements.txt
+│── README.md
 
-## 👨‍💻 Credits
+Installation & Setup
+1️⃣ Clone the Repository
+git clone https://github.com/YOUR-USERNAME/fake-news-detector.git
+cd fake-news-detector
+2️⃣ Install Dependencies
+pip install -r requirements.txt
+3️⃣ Run the Application
+streamlit run app.py
+🧠 How It Works
+User enters news headline or article text
+Text is cleaned and preprocessed
+TF-IDF Vectorizer converts text into numerical format
+Trained ML model analyzes the content
+Result is shown as:
 
-Developed by **Sai Teja**.
+✅ Real News
+❌ Fake News
+👨‍💻 Developed By
+Sai Tarun Tej
